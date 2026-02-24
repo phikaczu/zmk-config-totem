@@ -1,0 +1,186 @@
+layout: {zmk_keyboard: totem}
+layers:
+  DEF:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '&td_a'
+  - {t: S, h: LGUI}
+  - {t: D, h: LALT}
+  - {t: F, h: LSHFT}
+  - G
+  - H
+  - {t: J, h: RSHFT}
+  - {t: K, h: RALT}
+  - {t: L, h: RGUI}
+  - '&td_semi'
+  - '`'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ''''
+  - {t: TAB, h: LGUI}
+  - {t: ESC, h: LCTRL}
+  - {t: BSPC, h: NAV}
+  - {t: SPACE, h: SYM}
+  - {t: RET, h: LSHFT}
+  - {t: DEL, h: LALT}
+  SYM:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - \
+  - '7'
+  - '8'
+  - '9'
+  - ','
+  - +
+  - '='
+  - _
+  - '-'
+  - ^
+  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - .
+  - ''
+  - ''
+  - ''
+  - ''
+  - '*'
+  - '&'
+  - ;
+  - '1'
+  - '2'
+  - '3'
+  - /
+  - ''
+  - RET
+  - SPACE
+  - {t: BSPC, h: FUN}
+  - {type: held}
+  - LSHFT
+  - LALT
+  NAV:
+  - ''
+  - Ctl+Sft+TAB
+  - Ctl+TAB
+  - Ctl+W
+  - ''
+  - DEL
+  - HOME
+  - ''
+  - PG UP
+  - ''
+  - LCTRL
+  - LGUI
+  - LALT
+  - LSHFT
+  - TAB
+  - ''
+  - LEFT
+  - UP
+  - RIGHT
+  - AL CALC
+  - ''
+  - ''
+  - Gui+LEFT
+  - Gui+RIGHT
+  - Alt+F4
+  - ''
+  - INS
+  - END
+  - DOWN
+  - PG DN
+  - ''
+  - ''
+  - {t: TAB, h: LGUI}
+  - LCTRL
+  - {type: held}
+  - {t: ESC, h: FUN}
+  - LSHFT
+  - LALT
+  FUN:
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - F7
+  - F8
+  - F9
+  - F10
+  - ''
+  - PSCRN
+  - LSHFT
+  - LALT
+  - LGUI
+  - LCTRL
+  - ''
+  - F1
+  - ''
+  - ''
+  - F11
+  - F12
+  - OUT USB
+  - OUT BLE
+  - ''
+  - PAUSE BREAK
+  - BT CLR
+  - CAPS
+  - '&bootloader'
+  - '&sys_reset'
+  - {type: held}
+  - {type: held}
+  - '&sys_reset'
+  - '&bootloader'
+combos:
+- p: [0, 1]
+  k: '['
+  l: [DEF]
+- p: [1, 2]
+  k: '{'
+  l: [DEF]
+- p: [2, 3]
+  k: (
+  l: [DEF]
+- p: [6, 7]
+  k: )
+  l: [DEF]
+- p: [7, 8]
+  k: '}'
+  l: [DEF]
+- p: [8, 9]
+  k: ']'
+  l: [DEF]
+- p: [27, 28]
+  k: '&m_eq'
+  l: [DEF]
+- p: [28, 29]
+  k: '&m_neq'
+  l: [DEF]
+- p: [16, 18]
+  k: '&swap'
+  l: [NAV]
