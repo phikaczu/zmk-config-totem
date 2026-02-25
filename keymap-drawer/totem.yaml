@@ -33,12 +33,12 @@ layers:
   - .
   - /
   - ''''
-  - {t: TAB, h: LGUI}
-  - {t: ESC, h: LCTRL}
+  - TAB
+  - {t: ESCAPE, h: ide}
   - {t: BSPC, h: NAV}
   - {t: SPACE, h: SYM}
-  - {t: RET, h: LSHFT}
-  - {t: DEL, h: LALT}
+  - RET
+  - DEL
   SYM:
   - '!'
   - '@'
@@ -50,9 +50,9 @@ layers:
   - '8'
   - '9'
   - ','
-  - +
-  - '='
-  - _
+  - {t: +, h: LCTRL}
+  - {t: '=', h: LGUI}
+  - {t: _, h: LSHIFT}
   - '-'
   - ^
   - '0'
@@ -94,15 +94,15 @@ layers:
   - LALT
   - LSHFT
   - TAB
-  - ''
+  - TAB
   - LEFT
   - UP
   - RIGHT
   - AL CALC
   - ''
   - ''
-  - Gui+LEFT
-  - Gui+RIGHT
+  - ''
+  - ''
   - Alt+F4
   - ''
   - INS
@@ -117,39 +117,78 @@ layers:
   - {t: ESC, h: FUN}
   - LSHFT
   - LALT
+  ide:
+  - Ctl+LSHFT
+  - Alt+LEFT ARROW
+  - Alt+RIGHT ARROW
+  - F3
+  - ''
+  - ''
+  - Alt+`
+  - Ctl+Z
+  - Ctl+Sft+Z
+  - ''
+  - Alt+LEFT SHIFT
+  - F11
+  - F10
+  - F5
+  - ''
+  - ''
+  - {t: LEFT, h: LSHIFT}
+  - {t: UP, h: LALT}
+  - {t: RIGHT, h: LGUI}
+  - LCTRL
+  - ''
+  - ''
+  - Ctl+Sft+UP
+  - Ctl+Sft+DOWN
+  - F12
+  - ''
+  - ''
+  - ''
+  - DOWN
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ESC
+  - RET
+  - ''
   FUN:
+  - F1
   - F2
   - F3
   - F4
   - F5
-  - F6
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - F6
   - F7
   - F8
   - F9
   - F10
-  - ''
   - PSCRN
   - LSHFT
   - LALT
   - LGUI
   - LCTRL
-  - ''
-  - F1
-  - ''
-  - ''
+  - CAPS
   - F11
   - F12
+  - F13
+  - F14
+  - F15
   - OUT USB
   - OUT BLE
   - ''
   - PAUSE BREAK
+  - ''
   - BT CLR
-  - CAPS
   - '&bootloader'
   - '&sys_reset'
   - {type: held}
@@ -157,10 +196,10 @@ layers:
   - '&sys_reset'
   - '&bootloader'
 combos:
-- p: [0, 1]
+- p: [1, 2]
   k: '['
   l: [DEF]
-- p: [1, 2]
+- p: [24, 23]
   k: '{'
   l: [DEF]
 - p: [2, 3]
@@ -169,16 +208,16 @@ combos:
 - p: [6, 7]
   k: )
   l: [DEF]
-- p: [7, 8]
+- p: [27, 28]
   k: '}'
   l: [DEF]
-- p: [8, 9]
+- p: [8, 7]
   k: ']'
   l: [DEF]
-- p: [27, 28]
+- p: [28, 29]
   k: '&m_eq'
   l: [DEF]
-- p: [28, 29]
+- p: [22, 23]
   k: '&m_neq'
   l: [DEF]
 - p: [16, 18]
